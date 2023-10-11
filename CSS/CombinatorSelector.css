@@ -1,0 +1,15 @@
+div p{
+    color: rgb(0, 0, 0);
+} 
+
+ div > p{
+background-color: blueviolet;
+} 
+
+ div + h2{
+    color: yellowgreen;
+} 
+
+div ~ h2{
+    color: yellowgreen;
+}

@@ -1,0 +1,34 @@
+.position-static{
+    border: 1px soilid black;
+    height:200px;
+    width:200px;
+    background-color: aquamarine;
+    position:static;   /*default :  u can write it here or not its always their as a default*/
+    top:50px /*it should be disable in case of static position value*/
+}
+
+.pos-relative{
+    border:1px solid black;
+    height:200px;
+    width:200px;
+    background-color: red;
+    position: relative;
+    top:10px;
+    left:40px;
+}
+.pos-abs{
+    border:1px solid balck;
+    height:200px;
+    width:200px;
+    background-color: rgb(76, 43, 226);
+    position:absolute;
+    top:440px;
+    left:200px;
+}
+.pos-fixed{
+    position:static;
+    border:1px solid black;
+    height:100px;
+    width:100px;
+    text-align: center;
+}

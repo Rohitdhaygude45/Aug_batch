@@ -1,0 +1,35 @@
+/*table{
+    border:2px solid black;
+}
+th{
+    border:2px solid greenyellow;
+}
+Td{
+    border:2px solid greenyellow;
+}*/
+
+table,th,td{
+    border:2px solid black;
+    border-collapse: collapse;
+    padding:10px 10px;
+    margin-top: 50;
+    
+}
+th{
+    font-size: 30px;
+    background-color: rgb(71, 169, 255);
+    font-family:'courier';
+}
+td{
+    background-color: turquoise;
+    font-size: 20px;
+    font-family: 'Courier New';
+
+}
+h1{
+     margin:auto;
+     color:rgb(50, 7, 7);
+     text-align: center;
+
+}
+
