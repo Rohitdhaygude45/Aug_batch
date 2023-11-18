@@ -1,0 +1,16 @@
+<h1>Enter a number to promb box to get table</h1>
+
+<button onclick="addNumber()">Add number</button>
+ 
+<p id="table"> </p>
+<!--<script src = "table.js">-->
+<script>
+    function addNumber(){
+     let number =  parseInt( prompt("Enter a number"));
+     for(let i = 1 ; i <=10; i++){
+       let   res = number * i;
+          //document.getElementById("table").innerHTML = res + '<br>'
+          document.write(res+ '<br>')
+     }
+   }
+</script>
