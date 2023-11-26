@@ -1,0 +1,17 @@
+.div-container{
+    background-color: rgb(62, 97, 98);
+    height: 700px;
+}
+
+.btn{
+    background-color: aquamarine;
+    padding: 5px 5px;
+    margin: 4px;
+    border: none;
+    border-radius: 15px;
+}
+.main{
+    position: relative;
+    top: 20px;
+    left: 15px;
+}
