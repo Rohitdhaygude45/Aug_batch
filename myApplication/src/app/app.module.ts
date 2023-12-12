@@ -9,6 +9,7 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { DatabindingComponent } from './databinding/databinding.component';
 
 import { FormsModule } from '@angular/forms';
+import { DirectivesComponent } from './directives/directives.component';
 
 @NgModule({
   declarations: [ //component/pipe/directive
@@ -17,6 +18,7 @@ import { FormsModule } from '@angular/forms';
     LoginComponent,
     SignUpComponent,
     DatabindingComponent,
+    DirectivesComponent,
 
     
   ],
