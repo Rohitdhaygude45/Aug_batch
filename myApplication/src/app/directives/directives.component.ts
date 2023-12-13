@@ -6,9 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./directives.component.css']
 })
 export class DirectivesComponent {
+ public user:string ="Mentor";
 
-}
-
+ 
 
 //directives are used to manipulate the DOM. By using Angular directives, 
   //you can change the appearance, behavior or a layout of a DOM element
@@ -26,7 +26,21 @@ export class DirectivesComponent {
 
 // ngClass Directive: The ngClass directive is used to add or remove CSS classes to an HTML element.
 // ngStyle Directive: The ngStyle directive facilitates you to modify the style of an HTML element using the expression. You can also use ngStyle directive to dynamically change the style of your HTML element.
+ 
+
+city = "pune"
+isShow = true; //null/undefined/false >> false
+
+cars = ["i10",'i20',"swift","jaguar"];
+showDiv = true;
+fruit="pappaya";
 
 
-city ="pune"
-isShow =true; //null/undefined/false>>> false
+toggle(){
+  //this.showDiv = false;
+  this.showDiv = !this.showDiv;//!T>>F/ !f>>t
+}
+
+ 
+}
+

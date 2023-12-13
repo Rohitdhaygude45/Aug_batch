@@ -1,0 +1,30 @@
+.div-container{
+    border: 1px solid black;
+    background-color: aqua;
+    height: 100px;
+    width: 100px;
+
+}
+
+.info{
+    color:aqua;
+    border:1px solid blue;
+}
+
+.adminCls{
+    background-color: green;
+    height:100px;
+    width:100px;
+}
+
+.mentorCls{
+    background-color: pink;
+    height:100px;
+    width:100px;
+}
+
+.studentCls{
+    background-color: yellow;
+    height:100px;
+    width:100px;
+}
