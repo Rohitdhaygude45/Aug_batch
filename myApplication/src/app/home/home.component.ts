@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router'; //import section
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-home',
@@ -19,8 +20,8 @@ export class HomeComponent {
   name3 : any;
 
   
-  constructor(private router: Router){} //constuctor section
-
+  constructor(private router: Router, private dataService: DataService ){} //constuctor section
+  
   //LH, methods
   signUpCompo(){
      
@@ -33,7 +34,13 @@ export class HomeComponent {
 
   test(){
     console.log("test calling...");
+
     
   }
 
+  directives(){
+    this.router.navigateByUrl('directives');
+  }
 }
+
+

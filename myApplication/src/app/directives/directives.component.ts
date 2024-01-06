@@ -1,15 +1,19 @@
 import { Component } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-directives',
-  templateUrl: './directives.component.html',
+  templateUrl:'./directives.component.html',
   styleUrls: ['./directives.component.css']
 })
 export class DirectivesComponent {
  public user:string ="Mentor";
+  
+
+  constructor(private  dataService : DataService){}
 
  
-
+ 
 //directives are used to manipulate the DOM. By using Angular directives, 
   //you can change the appearance, behavior or a layout of a DOM element
 // 1.Component Directives
@@ -41,6 +45,10 @@ toggle(){
   this.showDiv = !this.showDiv;//!T>>F/ !f>>t
 }
 
- 
+  public getData(){
+    this.user = this.dataService.userName;
+    console.log("username",this.user);
+    
+  }
 }
 
