@@ -1,0 +1,36 @@
+<div>
+
+<form [formGroup]="signUpForm" class="form-container">
+    <label>Name</label><br>
+    <input type="text" formControlName="name"><br>
+    <span class="err" *ngIf="signUpForm.get('name')?.hasError('required') 
+      && signUpForm.get('name')?.touched">Name is required
+    </span><br>
+    <label>Mob No</label><br>
+    <input type="text" formControlName="mobile"><br>
+    <span class="err" *ngIf="signUpForm.get('mobile')?.hasError('maxlength')">
+      maximum 10 numbers are allowed
+    </span><br>
+    <label>Pancard No</label><br>
+    <input type="text" formControlName="pancard"><br>
+    <span class="err" *ngIf="signUpForm.get('pancard')?.hasError('pattern') && 
+    !signUpForm.get('pancard')?.hasError('maxlength')">
+      invalid pan number
+    </span>
+    <span class="err"
+     *ngIf="signUpForm.get('pancard')?.hasError('maxlength')">
+      maxlength is 10
+    </span><br>
+    <label>Email</label><br>
+    <input type="text" formControlName="email"><br>
+    <label>Password</label><br>
+    <input [type]="showPassword ? 'text' : 'password'" formControlName="pass">
+    <i *ngIf="show" (click)="toShowPassword()" class="bi bi-eye-fill eye-fill2"></i>
+    <i *ngIf="!show" (click)="toShowPassword()" class="bi bi-eye-slash-fill eye-slash-fill2"></i>
+   <br>
+    <label>Confirm Password</label><br>
+    <input type="text" formControlName="confirmPass">
+   <br><br>
+    <button (click)="submit()">Submit</button>
+</form>
+</div>

@@ -6,6 +6,20 @@
         <button (click)="directives()" class="btn">Directives</button>
         <button routerLink="lifecycleHooks" class="btn">lifecycleHooks</button>
         <button routerLink="parent" class="btn">Parent</button>
+        <button  (click)="purePipes()"> pure pipe</button>
+        <button routerLink="/templateForm" class="btn"> Template driven</button>
+        <button routerLink="viewchild1" class="btn">view child</button>
 
-    </div>
+
+
+
+
+        </div>
+
+        <br><br>
+
+        <div *ngIf="pipe">
+            {{name |titlecase}}
+            {{date1| date:'medium'}}
+        </div>
 </div>

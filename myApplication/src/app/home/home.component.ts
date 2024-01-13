@@ -15,9 +15,11 @@ export class HomeComponent {
 
   city : string = "Satara"; //property
   surName : any = true;
-  name : string = "poonam";
+  name : string = "rohit";
   name2! : string;
   name3 : any;
+  pipe: boolean=false;
+  date1=new Date();
 
   
   constructor(private router: Router, private dataService: DataService ){} //constuctor section
@@ -40,6 +42,11 @@ export class HomeComponent {
 
   directives(){
     this.router.navigateByUrl('directives');
+  }
+
+
+  purePipes(){
+    this.pipe=true;
   }
 }
 
