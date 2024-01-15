@@ -1,0 +1,75 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "name": "rohit",
+      "mobile": "12234456678",
+      "city": "satara"
+    },
+    {
+      "id": 2,
+      "name": "harshad",
+      "city": "pune"
+    },
+    {
+      "id": 3,
+      "name": "dhaygude",
+      "city": "pune"
+    },
+    {
+      "id": "f4c9",
+      "name": "sukhed",
+      "mobile": null,
+      "pancard": "",
+      "email": "",
+      "pass": "fqefq",
+      "confirmPass": "3t234t4t3"
+    },
+    {
+      "id": "f11c",
+      "name": "patil",
+      "mobile": null,
+      "pancard": "",
+      "email": "",
+      "pass": "Zcc",
+      "confirmPass": ""
+    },
+    {
+      "id": "20dc",
+      "adress": "pune",
+      "name": "nikhil"
+    },
+    {
+      "id": "054c",
+      "name": "",
+      "mobile": null,
+      "pancard": "",
+      "email": "",
+      "pass": "",
+      "confirmPass": ""
+    },
+    {
+      "id": "a4a7",
+      "adress": "pune",
+      "name": "nikhil"
+    }
+  ],
+  "admin": [
+    {
+      "id": "2",
+      "adress": "pune",
+      "name": "nikhil"
+    },
+    {
+      "id": "6ab0",
+      "adress": "pune",
+      "name": "nikhil"
+    },
+    {
+      "id": "1f50",
+      "adress": "pune",
+      "name": "nikhil"
+    }
+  ],
+  "owner": []
+}

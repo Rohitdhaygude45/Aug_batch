@@ -19,7 +19,10 @@ import { TemplatedrivenformComponent } from './templatedrivenform/templatedriven
 import { SignUpReactiveFormComponent } from './sign-up-reactive-form/sign-up-reactive-form.component';
 import { SearchPipe } from './search.pipe';
 import { Viewchild1Component } from './viewchild1/viewchild1.component';
-import { Viewchild2Component } from './viewchild2/viewchild2.component'
+import { HttpClientModule } from '@angular/common/http';
+import { Viewchild2Component } from './viewchild2/viewchild2.component';
+console.log("module calling...");
+
 
 
 @NgModule({
@@ -42,6 +45,7 @@ import { Viewchild2Component } from './viewchild2/viewchild2.component'
     Viewchild1Component,
     Viewchild2Component,
     
+    
 
     
   ],
@@ -50,6 +54,7 @@ import { Viewchild2Component } from './viewchild2/viewchild2.component'
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule 
 
    
 

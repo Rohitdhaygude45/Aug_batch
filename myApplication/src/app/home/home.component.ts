@@ -48,6 +48,11 @@ export class HomeComponent {
   purePipes(){
     this.pipe=true;
   }
+
+
+  adminsignin(){
+    this.router.navigateByUrl('/admin/adminsignin')
+  }
 }
 
 

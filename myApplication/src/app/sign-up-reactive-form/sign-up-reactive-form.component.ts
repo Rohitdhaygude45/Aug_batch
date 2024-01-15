@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { FormBuilder, formGroup, Validators } from '@angular/forms';
-
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-sign-up-reactive-form',
@@ -10,10 +11,16 @@ import { FormBuilder, formGroup, Validators } from '@angular/forms';
 })
 export class SignUpReactiveFormComponent {
 
-  signUpForm!: formGroup;
+  signUpForm!: FormGroup;
   show:boolean=false;
   showPassword :boolean=false;
-  constructor(private formBuilder: FormBuilder) { }
+  misMatch: boolean | undefined;
+   postApiResponse: any;
+
+
+
+  
+  constructor(private formBuilder: FormBuilder,private dataService :DataService,private router:Router ) { }
 
   ngOnInit() {
     this.formLoad()
@@ -31,10 +38,49 @@ export class SignUpReactiveFormComponent {
       confirmPass:['']
      })
   }
-  submit(){
-    console.log(this.signUpForm.value);
-    
+
+   spaceNotAllowed(inputVal:any){
+    const value =inputVal.value;
+    let isIncludeSpace =/\s{2,}/.test(value);
+    return isIncludeSpace ? {spaceNotAllowed:true} : null;
+   }
+   passwordMatchValidator(){
+
+    const password =this.signUpForm.get('pass')?.value;
+    const confirmPassword = this.signUpForm.get ('confirmPass ')?.value;
+
+
+
+    if (password !=confirmPassword){
+      this.misMatch=true;
+
+    }
+    else{
+      this.misMatch=false;
+    }
+   }
+
+
+   confirmPasswordMatch(){
+
   }
+
+
+ 
+ async submit(): Promise<void>{
+  let endPoint='user';
+  console.log(this.signUpForm.value);
+  this.postApiResponse = await this.dataService.postApiCall(endPoint,this.signUpForm.value).toPromise()
+
+ if( this.postApiResponse?.id){
+  this.router.navigateByUrl('');
+ }
+ else{
+  this.router.navigateByUrl('signUpForm');
+ }
+ }
+
+
 
   toShowPassword(){
     //  this.showPassword= true;

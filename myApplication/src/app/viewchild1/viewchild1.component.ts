@@ -8,9 +8,10 @@ import { Viewchild2Component } from '../viewchild2/viewchild2.component';
   styleUrls: ['./viewchild1.component.css']
 })
 export class Viewchild1Component {
-  @ViewChild('city')cityNmae!:ElementRef
+  @ViewChild('city')cityName!:ElementRef
   @ViewChild(Viewchild2Component) viewCompo!:Viewchild2Component;
   @ViewChild('confirmation') confirmation!:ElementRef;
+
 
 
   constructor(private cdr:ChangeDetectorRef){ }
@@ -21,9 +22,9 @@ export class Viewchild1Component {
  ngAfterViewInit(){
 
 
-  console.log(this.cityNmae.nativeElement.innerHTML);
-  this.cityNmae.nativeElement.innerHTML ="satara";
-  console.log(this.cityNmae.nativeElement.innerHTMLL);
+  console.log(this.cityName.nativeElement.innerHTML);
+  this.cityName.nativeElement.innerHTML ="satara";
+  console.log(this.cityName.nativeElement.innerHTMLL);
  this.name1 =this.viewCompo.name; //get
  this.viewCompo.city ='Nashik'; //set
 if(this.edit){
