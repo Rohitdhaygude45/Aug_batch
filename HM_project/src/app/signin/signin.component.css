@@ -1,0 +1,19 @@
+.form-container{
+    height: 300px;
+   
+    background-color:cadetblue;
+    border: 3px solid black;
+    margin: auto;
+    width: 400px;
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
+
+.username{
+    text-align: center;
+    margin-top:5px;
+    top:30px;
+    position: relative;
+    padding:20px;
+}

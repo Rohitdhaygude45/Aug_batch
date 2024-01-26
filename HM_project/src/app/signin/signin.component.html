@@ -1,0 +1,32 @@
+
+
+<div class="form-container">
+    <form [formGroup]="signInForm">
+
+    <div class="username">
+        <mat-form-field>
+        <mat-label>User Name</mat-label>
+        <input type="text" matInput formControlName="userName">
+        <mat-hint *ngIf="!signInForm.get('userName')?.touched">
+            Please enter your User Name
+        </mat-hint>
+        <mat-error *ngIf="signInForm.get('userName')?.errors?.['required']
+         && signInForm.get('userName')?.touched">
+         User Name is Required
+        </mat-error>
+    </mat-form-field>
+
+    <br>
+    <mat-form-field>
+        <mat-label>Password</mat-label>
+        <input type="text" matInput formControlName="password">
+    </mat-form-field>
+</div>
+
+    <br>
+    <button mat-raised-button color="accent" (click)="submit">Submit</button>
+    <br> <br>
+    <a routerLink="/signUp">Create New Account.?</a>
+
+</form>
+</div>
