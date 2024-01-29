@@ -2,47 +2,13 @@
   "admin": [],
   "owner": [
     {
-      "id": "72d9",
-      "userName": "",
-      "password": "rohit",
-      "comnfirmPassword": null,
-      "pan": "qwe34er",
+      "id": "7951",
+      "fullName": "rohit",
+      "password": "rohit45",
+      "confirmPass": "rohit45",
+      "pan": "rohit45t",
       "city": null,
-      "email": null,
-      "mobileNo": null,
-      "gender": null
-    },
-    {
-      "id": "7f11",
-      "userName": "",
-      "password": "rohit34",
-      "comnfirmPassword": null,
-      "pan": "rohit45rt",
-      "city": null,
-      "email": null,
-      "mobileNo": null,
-      "gender": null
-    },
-    {
-      "id": "3fe3",
-      "userName": "",
-      "password": null,
-      "comnfirmPassword": null,
-      "pan": null,
-      "city": null,
-      "email": null,
-      "mobileNo": null,
-      "gender": null
-    },
-    {
-      "id": "06af",
-      "userName": "",
-      "password": null,
-      "comnfirmPassword": null,
-      "pan": null,
-      "city": null,
-      "email": null,
-      "mobileNo": null,
+      "mob": "12131",
       "gender": null
     }
   ],

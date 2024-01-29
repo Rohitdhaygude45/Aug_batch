@@ -6,7 +6,7 @@
     <div class="username">
         <mat-form-field>
         <mat-label>User Name</mat-label>
-        <input type="text" matInput formControlName="userName">
+        <input type="text" matInput formControlName="UserName">
         <mat-hint *ngIf="!signInForm.get('userName')?.touched">
             Please enter your User Name
         </mat-hint>
@@ -21,10 +21,12 @@
         <mat-label>Password</mat-label>
         <input type="text" matInput formControlName="password">
     </mat-form-field>
+
+    <mat-error *ngIf="notValidUser">Invalid user name or password></mat-error>
 </div>
 
     <br>
-    <button mat-raised-button color="accent" (click)="submit">Submit</button>
+    <button mat-raised-button color="accent" (click)="submit()">Submit</button>
     <br> <br>
     <a routerLink="/signUp">Create New Account.?</a>
 

@@ -33,14 +33,13 @@ export class SignupComponent {
 
 
   formDetails(){
-   this. signUpForm = this.formBuilder.group({
-    userName:['',[Validators.required]],
+   this.signUpForm = this.formBuilder.group({
+    fullName:['',[Validators.required]],
     password:[],
-    comnfirmPassword:[],
+    confirmPass:[],
     pan:[],
     city:[],
-    email:[],
-    mobileNo:[],
+    mob:[],
     gender:[]
     
 
@@ -66,7 +65,9 @@ export class SignupComponent {
   
   submit(){
   this.apicallService.postApiCall(this.endpoint, this.signUpForm.value).subscribe(respo=>{
-     //this.router.navigateByUrl('/owner/ownerSuccess')
+    console.log(this.signUpForm.value);
+    
+    //  this.router.navigateByUrl('/owner/ownerSuccess')
      if(this.endpoint === 'admin'){
     this.router.navigateByUrl('/admin/adminSuccess')
   }

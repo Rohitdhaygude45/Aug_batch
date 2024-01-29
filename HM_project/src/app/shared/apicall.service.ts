@@ -6,9 +6,12 @@ import { Injectable } from '@angular/core';
 })
 export class ApicallService {
   
-  name:'rohit' | undefined
+  
   journey: any;
   url ='http://localhost:3000'
+  getApicall: any;
+
+  
 
   constructor( private   httpClient :   HttpClient){}
 
@@ -16,6 +19,10 @@ export class ApicallService {
   let url=this.url +'/' +endpoint;
   return this.httpClient.post(url,formData)
  }
-  }
- 
+
+getApiCall(journey:any){
+  let url =this.url +'/'+ journey;
+  return this.httpClient.get(url)
+}
+}
 
