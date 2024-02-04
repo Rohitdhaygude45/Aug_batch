@@ -7,10 +7,14 @@ import { Injectable } from '@angular/core';
 export class ApicallService {
   
   
+  
   journey: any;
   url ='http://localhost:3000'
   getApicall: any;
-
+  userName:any;
+  dataById: any;
+  deleteApiCal:any;
+  
   
 
   constructor( private   httpClient :   HttpClient){}
@@ -20,9 +24,20 @@ export class ApicallService {
   return this.httpClient.post(url,formData)
  }
 
-getApiCall(journey:any){
-  let url =this.url +'/'+ journey;
+ getApiCall(journey:any , id?:any){
+  let url = id ? this.url + '/' + journey +'/' + id : this.url + '/' + journey;
   return this.httpClient.get(url)
 }
+
+updateData(endpoint:any,id:any,body:any) {
+ let url=this.url+'/'+endpoint +'/' + id;
+ return this.httpClient.patch(url,body)
 }
+
+deleteApiCall(endpoint:any,id:any){
+  let url=this.url+'/'+endpoint +'/' + id;
+  return  this.httpClient.delete(url)
+}
+}
+
 

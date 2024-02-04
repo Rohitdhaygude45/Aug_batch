@@ -1,0 +1,24 @@
+.err{
+    color: red;
+}
+
+.form-container{
+    height: 600px;
+    background-color:cadetblue;
+    border: 3px solid black;
+    margin: auto;
+    width: 400px;
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
+
+.eye-fill2{
+    position: relative;
+    right: 23px;
+}
+
+.eye-slash-fill2{
+    position: relative;
+    right: 39px;
+}

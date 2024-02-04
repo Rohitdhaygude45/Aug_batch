@@ -1,5 +1,16 @@
 {
-  "admin": [],
+  "admin": [
+    {
+      "id": "f057",
+      "fullName": "rohit",
+      "password": "rohit45",
+      "confirmPass": "rohit45",
+      "pan": "rohit45t",
+      "city": null,
+      "mob": "8805248745",
+      "gender": null
+    }
+  ],
   "owner": [
     {
       "id": "7951",
@@ -10,9 +21,121 @@
       "city": null,
       "mob": "12131",
       "gender": null
+    },
+    {
+      "id": "27dc",
+      "fullName": "rohit",
+      "password": "rohit45",
+      "confirmPass": "rohit45",
+      "pan": "rti54r",
+      "city": null,
+      "mob": "7878",
+      "gender": null
+    },
+    {
+      "id": "b51f",
+      "fullName": "rohit",
+      "password": "rohit45",
+      "confirmPass": "rohit45",
+      "pan": "roh45it",
+      "city": null,
+      "mob": "123456987",
+      "gender": null
+    },
+    {
+      "id": "520a",
+      "fullName": "harshad",
+      "password": "harshad12",
+      "confirmPass": "harshad12",
+      "pan": "harsh12rt",
+      "city": null,
+      "mob": "123456",
+      "gender": null
+    },
+    {
+      "id": "2951",
+      "fullName": "rohit",
+      "password": "rohit45",
+      "confirmPass": "rohit45",
+      "pan": "rohit45t",
+      "city": null,
+      "mob": "123456",
+      "gender": null
+    },
+    {
+      "id": "472b",
+      "fullName": "prasad",
+      "password": "prasad123",
+      "confirmPass": "prasad123",
+      "pan": "pra34rt",
+      "city": null,
+      "mob": "1245",
+      "gender": null
     }
   ],
-  "user": [],
-  "hotelDetails": [],
+  "user": [
+    {
+      "id": "4868",
+      "fullName": "rohit",
+      "password": "rohit45",
+      "confirmPass": "rohit45",
+      "pan": "rohit45rt",
+      "city": null,
+      "mob": "1212",
+      "gender": null
+    },
+    {
+      "id": "4ad7",
+      "fullName": "rohit",
+      "password": "rohit45",
+      "confirmPass": "rohit45",
+      "pan": "rohit45t",
+      "city": null,
+      "mob": "123456",
+      "gender": null
+    },
+    {
+      "id": "5574",
+      "fullName": "rohit",
+      "password": "rohit45",
+      "confirmPass": "rohit45",
+      "pan": "rohit45t",
+      "city": null,
+      "mob": "123456",
+      "gender": null
+    }
+  ],
+  "hotelDetails": [
+    {
+      "id": "4",
+      "ownerName": "prasad",
+      "mob": "7777877",
+      "password": null,
+      "hotelName": "sarkar",
+      "hotelAddress": "pune",
+      "hotelMenu": "nonveg,veg",
+      "hotelMob": "78745"
+    },
+    {
+      "id": "8",
+      "ownerName": "nikhil",
+      "mob": "963258",
+      "password": "nikhil123",
+      "hotelName": "nisarg",
+      "hotelAddress": "phaltan",
+      "hotelMenu": "nonveg",
+      "hotelMob": "787978"
+    },
+    {
+      "id": "83de",
+      "ownerName": "ram",
+      "mob": "123",
+      "password": "ram12",
+      "hotelName": "ram",
+      "hotelAddress": "khandala",
+      "hotelMenu": "veg",
+      "hotelMob": "456"
+    }
+  ],
   "hotelBooking": []
 }

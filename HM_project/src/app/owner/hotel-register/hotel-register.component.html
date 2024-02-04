@@ -1,0 +1,84 @@
+<div class="form-container">
+
+    <form [formGroup]="hotelRegForm">
+
+        <mat-form-field class="form-fields">
+            <mat-label>Owner Name</mat-label>
+            <input type="text" matInput formControlName="ownerName">
+            <mat-hint *ngIf="!hotelRegForm.get('ownerName')?.touched"> Please enter your name here</mat-hint>
+            <mat-error
+                *ngIf="hotelRegForm.get('ownerName')?.errors?.['required'] && hotelRegForm.get('ownerName')?.touched">Full
+                Name is required</mat-error>
+        </mat-form-field>
+        
+        <br>
+        <mat-form-field class="form-fields">
+            <mat-label>Mob No</mat-label>
+            <input type="text" matInput formControlName="mob">
+            <mat-hint>Please enter mob no </mat-hint>
+            <mat-error *ngIf="hotelRegForm.get('mob')?.errors?.['maxlength'] && hotelRegForm.get('mob')?.touched">
+                mob no should not more than 10 digits
+            </mat-error>
+            <mat-error *ngIf="hotelRegForm.get('mob')?.errors?.['pattern'] 
+                && hotelRegForm.get('mob')?.touched
+                && !hotelRegForm.get('mob')?.errors?.['maxlength'] ">
+                Invalid pattern
+            </mat-error>
+        </mat-form-field>
+
+        <br>
+        <mat-form-field class="form-fields">
+            <mat-label>Password</mat-label>
+            <input [type]="showPassword ? 'text' : 'password'" matInput formControlName="password">
+            <mat-icon matSuffix *ngIf="showPassword" (click)="showPass()">visibility</mat-icon>
+            <mat-icon matSuffix *ngIf="!showPassword" (click)="showPass()"> visibility_off</mat-icon>
+        </mat-form-field>
+        <br>
+
+        <mat-form-field class="form-fields">
+            <mat-label>Hotel Name</mat-label>
+            <input type="text" matInput formControlName="hotelName">
+            <mat-hint *ngIf="!hotelRegForm.get('hotelName')?.touched"> Please enter Hotel name here</mat-hint>
+            <mat-error
+                *ngIf="hotelRegForm.get('hotelName')?.errors?.['required'] && hotelRegForm.get('hotelName')?.touched">Hotel
+                Name is required</mat-error>
+        </mat-form-field>
+        <br>
+
+        <mat-form-field class="form-fields">
+            <mat-label>Hotel Address</mat-label>
+            <input type="text" matInput formControlName="hotelAddress">
+            <mat-hint *ngIf="!hotelRegForm.get('hotelAddress')?.touched"> Please enter hotel Address here</mat-hint>
+            <mat-error
+                *ngIf="hotelRegForm.get('hotelAddress')?.errors?.['required'] && hotelRegForm.get('hotelAddress')?.touched">Full
+                Name is required</mat-error>
+        </mat-form-field>
+        <br>
+
+        <mat-form-field class="form-fields">
+            <mat-label>Hotel Mob</mat-label>
+            <input type="text" matInput formControlName="hotelMob">
+
+            <mat-hint *ngIf="!hotelRegForm.get('hotelMob')?.touched"> Please enter hotel Mob here</mat-hint>
+            <mat-error
+                *ngIf="hotelRegForm.get('hotelMob')?.errors?.['required'] && hotelRegForm.get('hotelMob')?.touched">hotel
+                Mob is required</mat-error>
+        </mat-form-field>
+        <br>
+
+        <mat-form-field class="form-fields">
+            <mat-label>Hotel Menu</mat-label>
+            <input type="text" matInput formControlName="hotelMenu">
+            <mat-hint *ngIf="!hotelRegForm.get('hotelMenu')?.touched"> Please enter hotel Menu here</mat-hint>
+            <mat-error
+                *ngIf="hotelRegForm.get('hotelMenu')?.errors?.['required'] && hotelRegForm.get('hotelMenu')?.touched">
+                hotel Menu is required</mat-error>
+        </mat-form-field>
+        <br>
+
+        <button mat-raised-button color="accent" class="btn"(click)="submit()" *ngIf="dataById">Submit</button>
+        <button mat-raised-button color="accent" class="btn"(click)="update()" *ngIf="dataById">Update</button>
+        
+    </form>
+</div>
+

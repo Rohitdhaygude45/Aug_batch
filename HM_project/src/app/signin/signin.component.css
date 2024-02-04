@@ -1,10 +1,17 @@
-.form-container{
-    height: 300px;
+
+.backgrondImg{
    
-    background-color:cadetblue;
-    border: 3px solid black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+
+.form-container{
+    height: 500px;
     margin: auto;
-    width: 400px;
+    
+    width: 500px;
     text-align: center;
     position: relative;
     top: 30px;
@@ -16,4 +23,5 @@
     top:30px;
     position: relative;
     padding:20px;
+    
 }

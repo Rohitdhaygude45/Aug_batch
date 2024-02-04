@@ -67,7 +67,7 @@ export class SignupComponent {
   this.apicallService.postApiCall(this.endpoint, this.signUpForm.value).subscribe(respo=>{
     console.log(this.signUpForm.value);
     
-    //  this.router.navigateByUrl('/owner/ownerSuccess')
+      //this.router.navigateByUrl('/owner/ownerSuccess')
      if(this.endpoint === 'admin'){
     this.router.navigateByUrl('/admin/adminSuccess')
   }
@@ -76,7 +76,7 @@ export class SignupComponent {
     this.router.navigateByUrl('/owner/ownerSuccess')
    }
     else{
-      this.router.navigateByUrl('/user/useSucces')
+      this.router.navigateByUrl('/user/userSuccess')
     }
   })
 

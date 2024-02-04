@@ -1,1 +1,22 @@
-<p>admin-success works!</p>
+
+<button mat-raised-button color="accent" (click)="viewHotels()"> View My Hotels</button>
+
+
+<div *ngIf="showData">
+    <table>
+        <tr>
+            <th *ngFor="let headings of headers">{{headings}}</th>
+            </tr>
+            <tr *ngFor="let hotelData of hotelData">
+                <td>{{hotelData.ownerName}}</td>
+                <td>{{hotelData.mob}}</td>
+                <td>{{hotelData.hotelName}}</td>
+                <td>{{hotelData.hotelAddress}}</td>
+                <td>{{hotelData.hotelMenu}}</td>
+                <td>{{hotelData.hotelMob}}</td>
+                
+                <td><mat-icon (click)="delete(hotelData.id)">delete</mat-icon></td>
+            </tr>
+    
+    </table>
+</div>

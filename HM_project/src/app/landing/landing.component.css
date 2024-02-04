@@ -1,0 +1,19 @@
+.main{
+    background-image: url('/assets/images/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 720px;
+    width:100vw;
+   
+    margin: auto;
+   
+    display:flex;
+   
+   
+ }
+ .btn{
+   position:absolute;
+   margin: auto;
+   top:200px;
+   left:500px;
+ }
