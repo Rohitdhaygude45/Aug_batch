@@ -1,0 +1,19 @@
+.btn{
+    text-align: center;
+    margin-top:10px;
+    top:30px;
+    position: relative;
+    padding:20px;
+}
+
+
+table,th, td {
+    border: 1px solid black;
+    margin: 10px;
+   
+}
+tr{
+    text-size-adjust: 10px;
+    margin-inline: 10px;
+    border-color: blue;
+}   
