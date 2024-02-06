@@ -1,10 +1,12 @@
-
-<button mat-raised-button color="accent" routerLink="/owner/hotelRegister"> New Hotel Register</button><br><br>
+<div class="btn">
+    <button mat-raised-button color="accent" routerLink="/owner/hotelRegister"> New Hotel Register</button><br><br>
 <button mat-raised-button color="accent" (click)="viewHotels()"> View My Hotels</button>
+</div>
+
 
 
 <div *ngIf="showData">
-    <table>
+    <table class="table">
         <tr>
             <th *ngFor="let headings of headers">{{headings}}</th>
             </tr>

@@ -9,6 +9,16 @@
       "city": null,
       "mob": "8805248745",
       "gender": null
+    },
+    {
+      "id": "e5a7",
+      "fullName": "prasad",
+      "password": "prasad123",
+      "confirmPass": "prasad123",
+      "pan": "prasad34y",
+      "city": null,
+      "mob": null,
+      "gender": null
     }
   ],
   "owner": [
@@ -71,6 +81,16 @@
       "city": null,
       "mob": "1245",
       "gender": null
+    },
+    {
+      "id": "7c49",
+      "fullName": "prasad",
+      "password": "prasad123",
+      "confirmPass": "prasad123",
+      "pan": "prasad34t",
+      "city": null,
+      "mob": null,
+      "gender": null
     }
   ],
   "user": [
@@ -131,6 +151,17 @@
       "ownerName": "ram",
       "mob": "123",
       "password": "ram12",
+      "hotelName": "ram",
+      "hotelAddress": "khandala",
+      "hotelMenu": "veg",
+      "hotelMob": "456"
+    },
+
+    {
+      "id": "83de",
+      "ownerName": "rohit",
+      "mob": "123",
+      "password": "rohit45",
       "hotelName": "ram",
       "hotelAddress": "khandala",
       "hotelMenu": "veg",

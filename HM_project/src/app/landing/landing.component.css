@@ -1,19 +1,15 @@
 .main{
     background-image: url('/assets/images/bg.jpg');
-    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-    height: 720px;
-    width:100vw;
-   
-    margin: auto;
-   
-    display:flex;
+    height: 100vh;
+}
    
    
- }
- .btn{
-   position:absolute;
-   margin: auto;
-   top:200px;
-   left:500px;
+  .btn{
+  text-align: center;
+  margin-top:10px;
+  top:30px;
+  position: relative;
+  padding:20px;
  }

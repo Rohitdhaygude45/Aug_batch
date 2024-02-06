@@ -1,0 +1,10 @@
+.btn{
+    text-align: center;
+    margin-top:10px;
+    top:30px;
+    position: relative;
+    padding:20px;
+}
+table, th, td {
+    border: 1px solid black;
+}

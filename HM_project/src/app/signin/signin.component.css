@@ -1,6 +1,6 @@
 
 .backgrondImg{
-   
+    background-image: url("/assets/images/bg5.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -19,7 +19,7 @@
 
 .username{
     text-align: center;
-    margin-top:5px;
+    margin-top:10px;
     top:30px;
     position: relative;
     padding:20px;

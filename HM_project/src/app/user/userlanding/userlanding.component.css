@@ -1,0 +1,13 @@
+
+
+.signin{
+    text-align: center;
+    margin-top:5px;
+    
+    position: relative;
+    padding:30px;
+    background-image: url("/assets/images/bg4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
