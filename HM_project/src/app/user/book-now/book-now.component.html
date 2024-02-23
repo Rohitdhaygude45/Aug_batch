@@ -1,1 +1,72 @@
 
+<div class="form-container">
+
+    <form [formGroup]="hotelBookingForm">
+
+        <mat-form-field class="form-fields">
+            <mat-label>UserName</mat-label>
+            <input type="text" matInput formControlName="userName">
+            <mat-hint *ngIf="!hotelBookingForm.get('userName')?.touched"> Please enter your name here</mat-hint>
+            <mat-error
+                *ngIf="hotelBookingForm.get('userName')?.errors?.['required'] && hotelBookingForm.get('userName')?.touched">Full
+                Name is required</mat-error>
+        </mat-form-field>
+        
+        <br>
+        <mat-form-field class="form-fields">
+            <mat-label>Mob No</mat-label>
+            <input type="text" matInput formControlName="mob">
+            <mat-hint>Please enter mob no </mat-hint>
+            <mat-error *ngIf="hotelBookingForm.get('mob')?.errors?.['maxlength'] && hotelBookingForm.get('mob')?.touched">
+                mob no should not more than 10 digits
+            </mat-error>
+            <mat-error *ngIf="hotelBookingForm.get('mob')?.errors?.['pattern'] 
+                && hotelBookingForm.get('mob')?.touched
+                && !hotelBookingForm.get('mob')?.errors?.['maxlength'] ">
+                Invalid pattern
+            </mat-error>
+        </mat-form-field>
+         <br>
+        <mat-form-field class="form-fields">
+            <mat-label>Aadhar No</mat-label>
+            <input type="text" matInput formControlName="Aadhar">
+            <mat-hint>Please enter Aadhar no </mat-hint>
+            <mat-error *ngIf="hotelBookingForm.get('Aadhar')?.errors?.['maxlength'] && hotelBookingForm.get('Aadhar')?.touched">
+                Aadhar no should not more than 10 digits
+            </mat-error>
+            <mat-error *ngIf="hotelBookingForm.get('Aadhar')?.errors?.['pattern'] 
+                && hotelBookingForm.get('Aadhar')?.touched
+                && !hotelBookingForm.get('Aadhar')?.errors?.['maxlength'] ">
+                Invalid pattern
+            </mat-error>
+        </mat-form-field>
+        <br>
+        <mat-form-field class="form-fields">
+            <mat-label>Date</mat-label>
+            <input type="date" matInput formControlName="Date">
+
+            <mat-hint *ngIf="!hotelBookingForm.get('Date')?.touched"> Please enter date here</mat-hint>
+            <mat-error
+                *ngIf="hotelBookingForm.get('Date')?.errors?.['required'] && hotelBookingForm.get('Date')?.touched">
+                date is required</mat-error>
+        </mat-form-field>
+        <br>
+      
+        <mat-form-field class="form-fields">
+            <mat-label>Amount</mat-label>
+            <input type="text" matInput formControlName="amount">
+
+            <mat-hint *ngIf="!hotelBookingForm.get('Date')?.touched"> Please enter amount here</mat-hint>
+            <mat-error
+                *ngIf="hotelBookingForm.get('amount')?.errors?.['required'] && hotelBookingForm.get('amount')?.touched">
+                amount is required</mat-error>
+        </mat-form-field>
+        
+        <br>
+
+        <button mat-raised-button color="accent" class="btn" (click)="submit()">submit</button>
+       
+        
+    </form>
+</div>
+

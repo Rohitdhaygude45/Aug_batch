@@ -77,7 +77,7 @@
         <br>
 
         <button mat-raised-button color="accent" class="btn" (click)="submit()" *ngIf="!dataById">Submit</button>
-        <button mat-raised-button color="accent" class="btn" (click)="update()" *ngIf="!dataById">Update</button>
+        <button mat-raised-button color="accent" class="btn" (click)="update()" *ngIf="dataById">Update</button>
         
     </form>
 </div>

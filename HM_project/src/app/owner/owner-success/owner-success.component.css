@@ -9,3 +9,25 @@ table, th, td {
     border: 1px solid black;
     margin: 10px;
 }
+
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    background-image:url("/assets/images/bg2.jpg");
+    background-size:cover;
+}
+mat-card{
+    background-color:beige;
+    height: 550px;
+    margin:30px;
+    width:400px;
+}
+mat-card-image{
+    height: 250px;
+    width:400px;
+
+}
+.hotelCard{
+    display:flex;
+    flex-wrap: wrap;
+}

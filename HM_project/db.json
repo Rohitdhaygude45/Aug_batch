@@ -134,7 +134,8 @@
       "hotelName": "sarkar",
       "hotelAddress": "pune",
       "hotelMenu": "nonveg,veg",
-      "hotelMob": "78745"
+      "hotelMob": "78745",
+      "image": "/assets/images/bg.jpg"
     },
     {
       "id": "8",
@@ -144,7 +145,8 @@
       "hotelName": "nisarg",
       "hotelAddress": "phaltan",
       "hotelMenu": "nonveg",
-      "hotelMob": "787978"
+      "hotelMob": "787978",
+      "image": "/assets/images/bg2.jpg"
     },
     {
       "id": "83de",
@@ -154,7 +156,8 @@
       "hotelName": "ram",
       "hotelAddress": "khandala",
       "hotelMenu": "veg",
-      "hotelMob": "456"
+      "hotelMob": "456",
+      "image": "/assets/images/bg3.jpg"
     },
     {
       "id": "83de",
@@ -164,8 +167,60 @@
       "hotelName": "ram",
       "hotelAddress": "khandala",
       "hotelMenu": "veg",
-      "hotelMob": "456"
+      "hotelMob": "456",
+      "image": "/assets/images/bg3.jpg"
+    },
+    {
+      "id": "83de",
+      "ownerName": "rohit",
+      "mob": "123",
+      "password": "rohit45",
+      "hotelName": "Ayodhya",
+      "hotelAddress": "satara",
+      "hotelMenu": "veg",
+      "hotelMob": "456",
+      "image": "/assets/images/bg2.jpg"
+    },
+    
+    {
+      "id": "1358",
+      "ownerName": "shubham",
+      "mob": "123456",
+      "password": "shubham123",
+      "hotelName": "sai",
+      "hotelAddress": "khandala",
+      "hotelMenu": "veg",
+      "hotelMob": "123",
+      "image": "/assets/images/bg5.jpg"
+    },
+    {
+      "id": "1238",
+      "ownerName": "",
+      "mob": "123456",
+      "password": "shubham123",
+      "hotelName": "royal inn",
+      "hotelAddress": "khandala",
+      "hotelMenu": "veg",
+      "hotelMob": "123",
+      "image": "/assets/images/bg5.jpg"
     }
   ],
-  "hotelBooking": []
+  "hotelBooking": [
+    {
+      "id": "7362",
+      "userName": "rohit",
+      "mob": "123456",
+      "Aadhar": "789456",
+      "Date": "2024-02-12",
+      "amount": "1200"
+    },
+    {
+      "id": "b121",
+      "userName": "rohit",
+      "mob": "789456",
+      "Aadhar": "123456",
+      "Date": "2024-02-23",
+      "amount": "1000"
+    }
+  ]
 }

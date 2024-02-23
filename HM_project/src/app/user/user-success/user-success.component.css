@@ -4,7 +4,34 @@
     top:30px;
     position: relative;
     padding:20px;
+   
 }
-table, th, td {
-    border: 1px solid black;
+
+.example-card{
+    max-width: 400px;
+  }
+  
+.button{
+    background-color: rgb(237, 100, 100);
+}
+.hotelCard{
+    display:flex;
+    flex-wrap: wrap;
+    
+   
+}
+mat-card{
+    background-color:blueviolet;
+    height: 550px;
+    margin:30px;
+    
+}
+mat-card-image{
+    height: 250px;
+}
+.bgcolor{
+    background-color: bisque;
+    min-height:100%;
+/* background-image: url("/assets/images/bg3.jpg"); */
+background-size: cover;
 }

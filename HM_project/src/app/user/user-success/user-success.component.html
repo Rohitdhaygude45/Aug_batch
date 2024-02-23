@@ -1,26 +1,37 @@
 
-<div class="btn">
-    <button mat-raised-button color="accent" routerLink="/owner/hotelRegister"> New Hotel Register</button><br><br>
-<button mat-raised-button color="accent" (click)="viewHotels()"> View My Hotels</button>
-</div>
-
-
-<div *ngIf="showData">
-    <table>
-        <tr>
-            <th *ngFor="let headings of headers">{{headings}}</th>
-            </tr>
-            <tr *ngFor="let hotelData of hotelData">
-                <td>{{hotelData.ownerName}}</td>
-                <td>{{hotelData.mob}}</td>
-                <td>{{hotelData.hotelName}}</td>
-                <td>{{hotelData.hotelAddress}}</td>
-                <td>{{hotelData.hotelMenu}}</td>
-                <td>{{hotelData.hotelMob}}</td>
-                <td><button routerLink="/user/bookNow">Book Now</button></td>
-                
+<div class="bgcolor">
+    <div class="btn">
+   
+        <button mat-raised-button color="accent" (click)="viewHotels()"> View Hotels</button>
+        </div>
+        <br>
+        
+        <div *ngIf="showData" class="hotelCard">
              
-            </tr>
-    
-    </table>
+              <mat-card  *ngFor="let hotelData of hotelData" class="example-card">
+                <mat-card-header>
+                  <div mat-card-avatar>
+                    <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon>
+        
+                  </div>
+                  <mat-card-title> {{hotelData.hotelName}}</mat-card-title>
+                  
+                </mat-card-header>
+                <img mat-card-image src={{hotelData.image}} alt="Photo">
+                <mat-card-content>
+                  <p>
+                    ownerName: {{hotelData.ownerName}}<br>
+                    owner Mob No: {{hotelData.mob}} <br>
+                     hotel Name: {{hotelData.hotelName}} <br>
+                    hotelAddress: {{hotelData.hotelAddress}} <br>
+                   hotel Menu :  {{hotelData.hotelMenu}} <br>
+                   hotel Mob No: {{hotelData.hotelMob}} <br>
+                   
+                  </p>
+                  <button class="button"  routerLink="/user/bookNow" mat-button>book Now </button>
+                  
+                </mat-card-content>
+               
+              </mat-card>
+        </div>
 </div>
