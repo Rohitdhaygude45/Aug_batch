@@ -12,7 +12,7 @@ export class UserSuccessComponent {
 
 
   showData:Boolean =false;
-    headers =['ownerName','mob','hotelName','hotelMenu','hotelAddress','hotelContact','Book Now']
+    
   
   
   constructor( private apicallService:ApicallService){}
